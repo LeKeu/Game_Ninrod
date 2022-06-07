@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Monstro : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class Monstro : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.tag == "Player"){ //se ele tocar no player, acontece tal coisa
             Debug.Log("PEGUEI");
+            SceneManager.LoadScene("Perder");
         }    
     }
 }
