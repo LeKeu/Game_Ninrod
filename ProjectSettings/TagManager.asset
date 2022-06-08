@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Monster
   - fim
+  - Inimigo
+  - Lives
   layers:
   - Default
   - TransparentFX

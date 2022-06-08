@@ -5,16 +5,32 @@ using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
 {
+    int teste = Monstro.cena;
+
+    //public Monstro MonstroScript;
     [SerializeField] string cena;
     [SerializeField] KeyCode Key;
-    
-    void Update() {
-        if(Input.GetKey(Key)){
+    [SerializeField] KeyCode Key2;
+
+    void Update()
+    {
+        //Debug.Log("buttons " + teste);
+        if (Input.GetKey(Key2))
+        {
+            gameOverMudarCena();
+        }
+        if (Input.GetKey(Key))
+        {
             mudarCena();
-        }  
+        }
     }
-    public void mudarCena(){
+    public void mudarCena()
+    {
         SceneManager.LoadScene(cena);
     }
 
+    public void gameOverMudarCena()
+    {
+        SceneManager.LoadScene(teste);
+    }
 }

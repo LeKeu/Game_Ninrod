@@ -8,7 +8,7 @@ public class Movimento : MonoBehaviour
 
     [SerializeField] float velMov;
     [SerializeField] float forcaPulo;
-    private bool isPulando;
+    //private bool isPulando;
     private float moveVert;
     private float moveHoriz;
 
@@ -18,7 +18,7 @@ public class Movimento : MonoBehaviour
 
         //velMov = 5f;
         //forcaPulo = 10f;
-        isPulando = false;
+        //isPulando = false;
 
     } // -1 (left) 0 (none) 1 (right)
 
@@ -27,7 +27,8 @@ public class Movimento : MonoBehaviour
         moveHoriz = Input.GetAxisRaw("Horizontal");
         moveVert = Input.GetAxisRaw("Vertical");
 
-        if(Input.GetKeyDown(KeyCode.Space)){
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
             rb2D.AddForce(Vector2.up * forcaPulo, ForceMode2D.Impulse);
             //Debug.Log("pulando");
         }
@@ -35,7 +36,8 @@ public class Movimento : MonoBehaviour
 
     void FixedUpdate() //mov horizontal
     {
-        if(moveHoriz > 0.1f || moveHoriz < -0.1f){
+        if (moveHoriz > 0.1f || moveHoriz < -0.1f)
+        {
             rb2D.AddForce(new Vector2(moveHoriz / velMov, 0f), ForceMode2D.Impulse);
             //Debug.Log("andando");
         }
