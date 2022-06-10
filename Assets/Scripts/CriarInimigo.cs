@@ -8,9 +8,6 @@ public class CriarInimigo : MonoBehaviour
     [SerializeField] GameObject inimigo;
     [SerializeField] float tempo_respawn;
     [SerializeField] Transform monstro; //monoto
-    public Image img1;
-    public Image img2;
-    public Image img3;
     // pegar as imagens aqui e fazer o código p apagar elas aqui tbm, n no Inimigo.cs
     // Start is called before the first frame update
     void Start()
@@ -22,8 +19,9 @@ public class CriarInimigo : MonoBehaviour
 
     private void criar_inimigo(){
         Instantiate(inimigo);
-        inimigo.transform.position = new Vector2(Random.Range(-10, 10), monstro.position.y);
+        inimigo.transform.position = new Vector2(Random.Range(-10, 10), monstro.position.y+4);
     }
+    
 
     IEnumerator inimigo_wave(){
         while(true){

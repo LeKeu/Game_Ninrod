@@ -7,7 +7,8 @@ public class Inimigo : MonoBehaviour
 {
     
     static int contador = 3;
-  
+    //Vidas vidas_script;
+
     private Rigidbody2D rb;
     [SerializeField] float velGuspe;
     //[SerializeField] Transform barreira_topo;
@@ -18,7 +19,8 @@ public class Inimigo : MonoBehaviour
     {
         rb = this.GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(0, velGuspe);
-        //limites_tela = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
+        //vidas_script = gameObject.GetComponent<Vidas>();
+        
     }
 
     // Update is called once per frame
@@ -37,23 +39,7 @@ public class Inimigo : MonoBehaviour
         {
             Destroy(gameObject);
             Debug.Log("Levei uma guspada");
-            contador--;
-            if (contador == 2)
-            {
-                Debug.Log("2 vidas sobrando");
-                //Destroy(imagem1); IMPORTANTE
-            }
-            else if (contador == 1)
-            {
-                Debug.Log("1 vida sobrando");
-                //Destroy(imagem2); IMPORTANTE
-            }
-            else
-            {
-                Debug.Log("0 vidas sobrando");
-                //Destroy(imagem3); IMPORTANTE
-                //Time.timeScale = 0;
-            }
+            //vidas_script.destruir_coracao();
 
         }
     }

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
 {
-    int teste = Monstro.cena;
+    int teste = Vidas.cena;
 
     //public Monstro MonstroScript;
     [SerializeField] string cena;
