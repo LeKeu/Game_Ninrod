@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class Inimigo : MonoBehaviour
 {
-    
-    static int contador = 3;
-    //Vidas vidas_script;
 
     private Rigidbody2D rb;
     [SerializeField] float velGuspe;

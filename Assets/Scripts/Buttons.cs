@@ -15,13 +15,13 @@ public class Buttons : MonoBehaviour
     void Update()
     {
         //Debug.Log("buttons " + teste);
-        if (Input.GetKey(Key2))
-        {
-            gameOverMudarCena();
-        }
         if (Input.GetKey(Key))
         {
             mudarCena();
+        }
+        if (Input.GetKey(Key2))
+        {
+            gameOverMudarCena();
         }
     }
     public void mudarCena()
@@ -32,5 +32,10 @@ public class Buttons : MonoBehaviour
     public void gameOverMudarCena()
     {
         SceneManager.LoadScene(teste);
+    }
+
+    public void sair()
+    {
+        Application.Quit();
     }
 }

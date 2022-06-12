@@ -8,6 +8,9 @@ TagManager:
   - fim
   - Inimigo
   - Lives
+  - fundo_bg
+  - Plataforma
+  - Torre
   layers:
   - Default
   - TransparentFX
