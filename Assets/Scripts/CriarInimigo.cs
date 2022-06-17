@@ -19,7 +19,7 @@ public class CriarInimigo : MonoBehaviour
 
     private void criar_inimigo(){
         Instantiate(inimigo);
-        inimigo.transform.position = new Vector2(Random.Range(-10, 10), monstro.position.y+4);
+        inimigo.transform.position = new Vector2(Random.Range(-10, 10), monstro.position.y);
     }
     
 

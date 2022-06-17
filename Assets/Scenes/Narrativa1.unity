@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7, y: 33}
+  m_AnchoredPosition: {x: 7, y: 93}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &9437857
@@ -181,9 +181,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'texto narrativa texto narrativa texto narrativa texto narrativa
-
-'
+  m_text: "Ninrod 22, este \xE9 o nome da nave que recebeu a miss\xE3o de atravessar
+    um buraco negro e descobrir o que h\xE1 do outro lado. Sua tripula\xE7\xE3o \xE9
+    composta dos melhores, e mais capacitados astronautas que o planeta Terra j\xE1
+    viu, afinal todas as na\xE7\xF5es se uniram para que essa opera\xE7\xE3o pudesse
+    ocorrer. O que eles n\xE3o esperavam... \xE9 que algo mais entrou naquele buraco
+    negro. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -205,13 +208,13 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 2427
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

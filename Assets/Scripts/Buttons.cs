@@ -38,4 +38,20 @@ public class Buttons : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void fase1(){
+        SceneManager.LoadScene("fase1");
+    }
+
+    public void fase2(){
+        SceneManager.LoadScene("fase2");
+    }
+
+    public void fase3(){
+        SceneManager.LoadScene("fase3");
+    }
+
+    public void fases(){
+        SceneManager.LoadScene("Fases");
+    }
 }
