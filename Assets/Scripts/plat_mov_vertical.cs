@@ -22,7 +22,7 @@ public class plat_mov_vertical : MonoBehaviour
     {
         if (other.gameObject.tag == "Torre" || other.gameObject.tag == "Plataforma")
         {
-            Debug.Log("AAAAAAAAAAAAAAAAA");
+            //Debug.Log("AAAAAAAAAAAAAAAAA");
             velPlat *= -1;
             //rb2D.transform.Translate(velPlat * -1, 0, 0);
         }

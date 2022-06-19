@@ -22,7 +22,7 @@ public class plataforma_Mov : MonoBehaviour
     {
         if (other.gameObject.tag == "Torre" || other.gameObject.tag == "Plataforma")
         {
-            Debug.Log("AAAAAAAAAAAAAAAAA");
+            //Debug.Log("AAAAAAAAAAAAAAAAA");
             velPlat *= -1;
             //rb2D.transform.Translate(velPlat * -1, 0, 0);
         }
