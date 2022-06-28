@@ -48,3 +48,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Luz
+    uniqueID: 3558612999
+    locked: 0
+  - name: Mundo
+    uniqueID: 1541518407
+    locked: 0

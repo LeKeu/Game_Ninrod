@@ -9,7 +9,6 @@ public class Inimigo : MonoBehaviour
     private Rigidbody2D rb;
     [SerializeField] float velGuspe;
     //[SerializeField] Transform barreira_topo;
-
     Vector2 barreira_topo;
 
     void Start()
@@ -17,14 +16,13 @@ public class Inimigo : MonoBehaviour
         rb = this.GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(0, velGuspe);
         //vidas_script = gameObject.GetComponent<Vidas>();
-        
     }
 
     // Update is called once per frame
     void Update()
     {
         barreira_topo = barreira.barreiraTeste;
-        if(transform.position.y > barreira_topo.y){
+        if(transform.position.y > barreira_topo.y + 10){
             Destroy(this.gameObject);
         }
     }

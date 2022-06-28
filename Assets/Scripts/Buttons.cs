@@ -40,15 +40,15 @@ public class Buttons : MonoBehaviour
     }
 
     public void fase1(){
-        SceneManager.LoadScene("fase1");
+        SceneManager.LoadScene("Narrativa1");
     }
 
     public void fase2(){
-        SceneManager.LoadScene("fase2");
+        SceneManager.LoadScene("Narrativa2");
     }
 
     public void fase3(){
-        SceneManager.LoadScene("fase3");
+        SceneManager.LoadScene("Narrativa3");
     }
 
     public void fases(){
