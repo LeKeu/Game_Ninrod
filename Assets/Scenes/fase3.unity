@@ -13276,7 +13276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e18d71b77e3d94e4a9d8670682aa7c93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inimigo: {fileID: 6343139867244934559, guid: e339d5b0096cc1a418d1096328b0b23d, type: 3}
+  inimigo: {fileID: 6343139867244934559, guid: 933a4b142f12aa643b5e8ad1f24b9541, type: 3}
   tempo_respawn: 1
   monstro: {fileID: 2024416149}
 --- !u!114 &1534931450
